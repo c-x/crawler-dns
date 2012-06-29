@@ -1,0 +1,15 @@
+This is a simple web crawler based on Scrapy framework for DNS Names collection with : 
+- nameserverspy.com
+- afnic.fr
+
+Run it once a day using crontab and you will get a nice mongo collection with daily names registred (.com, .fr, etc)
+
+Require :
+- scrapy 0.14.1
+- mongodb
+
+Usage :
+$ scrapy crawl nameserverspy 
+$ scrapy crawl afnic
+
+
